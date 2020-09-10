@@ -70,6 +70,8 @@ contract SimpleBank {
         enrolled[msg.sender] = true;
         
         emit LogEnrolled(msg.sender);
+
+        return true;
     }
 
     /// @notice Deposit ether into bank
